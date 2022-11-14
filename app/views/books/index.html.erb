@@ -4,7 +4,6 @@ Here are your list of books on your bookshelf:
 
 <br/>
 <br/>
-<br/>
 
 <% if @books %>
   <table>
@@ -21,7 +20,7 @@ Here are your list of books on your bookshelf:
         <td><%= book.title %></td>
         <td><%= book.author %></td>
         <td><%= book.read %></td>
-        <td><%= link_to 'Learn More', books_path %></td>
+        <td><%= link_to 'Learn More', book_path(book.id) %></td>
       </tr>
       <% end %>
     </tbody>
@@ -32,4 +31,4 @@ Here are your list of books on your bookshelf:
 <br/>
 <br/>
 
-<%= link_to "Add to shelf", new_books_path %>
+<%= link_to "Add to shelf", new_book_path %>
