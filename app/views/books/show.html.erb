@@ -1,14 +1,17 @@
-<h1><%= @books.title %></h1>
-<p>Synopsis:</p>
-<p>
+<h1 class='display-4 text-center'><strong><%= @books.title %></strong></h1>
+<p class='ps-4'><strong>Synopsis:</strong></p>
+
+<p class='ps-5 lead'>
   <%= @books.synopsis %>
 </p>
 
-
-<%= link_to "Edit Info", edit_book_path(@books) %> 
-<%= link_to "Delete entry", book_path(@books), data: {
-  turbo_method: :delete,
-  turbo_confirm: "Are you sure?"
-} %>
-</br>
-<%= link_to "Back to home", root_path %>
+<div class='text-center'>
+  <%= link_to "Edit Info", edit_book_path(@books), class:"btn btn-secondary btn-dark" %> 
+  <%= link_to "Delete entry", book_path(@books), class:"btn btn-secondary btn-dark", data: {
+    turbo_method: :delete,
+    turbo_confirm: "Are you sure?"
+  } %>
+  </br>
+  </br>
+  <%= link_to "Back to home", root_path, class:"btn btn-secondary" %>
+</div>

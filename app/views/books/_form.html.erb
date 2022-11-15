@@ -1,26 +1,26 @@
 <%= form_with model: books do |form| %>
-  <div>
-    <%= form.text_field :title, placeholder: "Book Title" %>
+  <div class='mb-3 px-5'>
+    <%= form.text_field :title, class:'form-control', placeholder: "Book Title" %>
   </div>
   <br/>
-  <div>
-    <%= form.text_field :author, placeholder: "Author Name" %>
+  <div class='mb-3 px-5'>
+    <%= form.text_field :author, class:'form-control', placeholder: "Author Name" %>
   </div>
 
-  <div>
-    <%= form.label "Have I read this book?" %>
+  <div class='mb-3 px-5'>
+    <%= form.label "Have you read this book?" %>
     <%= form.radio_button :read, "true" %>
-    <%= form.label "True" %>
+    <%= form.label "Yes" %>
     <%= form.radio_button :read, "false" %>
-    <%= form.label "False" %>
+    <%= form.label "No" %>
   </div>
 
-  <div>
-    <%= form.text_area :synopsis, placeholder: "Write out your quick synopsis here!" %>
+  <div class='mb-3 px-5'>
+    <%= form.text_area :synopsis, class:'form-control', placeholder: "Write out your quick synopsis here!" %>
   </div>
 
-  <div>
-    <%= form.submit %>
+  <div class='text-center'>
+    <%= form.submit class:"btn btn-secondary btn-dark"%>
   </div>
 
 <% end %>
