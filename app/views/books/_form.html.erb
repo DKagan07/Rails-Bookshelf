@@ -19,6 +19,10 @@
     <%= form.text_area :synopsis, class:'form-control', placeholder: "Write out your quick synopsis here!" %>
   </div>
 
+  <div class='mb-3 px-5'>
+    <%= form.number_field :user_id, id: :book_user_id, class:'form-control', value: current_user.id, type: :hidden %>
+  </div>
+
   <div class='text-center'>
     <%= form.submit class:"btn btn-secondary btn-dark"%>
   </div>
