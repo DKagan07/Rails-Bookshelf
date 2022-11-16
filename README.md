@@ -1,24 +1,15 @@
-# README
+# Your Bookshelf!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an app powered by Ruby on Rails to check-in and monitor your books.
 
 Things you may want to cover:
 
-* Ruby version
+  * Tracks book titles, authors, whether you've read them yet, and a small, user-imputted synopsis.
 
-* System dependencies
+  * Full Auth capabilities with the Devise gem
 
-* Configuration
+  * CRUD functionality with books for each user
 
-* Database creation
+  * Cannot update, edit, or delete books without being logged in
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  * Built for fun!
