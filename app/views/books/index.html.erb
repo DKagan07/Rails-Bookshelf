@@ -19,7 +19,6 @@
           <th>Author</th>
           <th>Have I read it?</th>
           <th>Synopsis</th>
-          <th>User Id</th>
         </thead>
       
         <tbody class="table-group-divider">
@@ -36,7 +35,6 @@
                 <%end%>
               </td>
               <td><%= link_to 'Learn More', book_path(book.id) %></td>
-              <td><%= book.user_id %> </td>
             </tr>
             <% end %>
           <% end %>
